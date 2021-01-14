@@ -1,0 +1,28 @@
+{
+    "name": "pl_Felyx",
+    "properties": {
+        "activities": [
+            {
+                "name": "activity_databricks_notebook",
+                "type": "DatabricksNotebook",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "7.00:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "notebookPath": "/Fylex"
+                },
+                "linkedServiceName": {
+                    "referenceName": "ls_ABD",
+                    "type": "LinkedServiceReference"
+                }
+            }
+        ],
+        "annotations": []
+    }
+}
