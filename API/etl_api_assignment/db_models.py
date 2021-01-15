@@ -33,7 +33,7 @@ class location(Model):
         results = []
 
         if not loc_data:
-            results = {"No Data Available for location"}
+            results = {["No Data Available for location"]}
         else:
             res = []
             for id,wgs84_polygon in loc_data:
