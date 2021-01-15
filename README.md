@@ -1,7 +1,7 @@
 <h1> Felyx Assessment</h1>
 <p align = "center">
 <h1>Problem Statement</h1>
-<ul><li> Data is supplied in the csv files is available in the cloud storage, for the assessment, the csv files are provided.These csv files needs to be stored in the SQL databse. </li>
+<ul><li> Data is supplied in the csv files which are available in the cloud storage, for the assessment, the csv files are provided.These csv files needs to be stored in the SQL databse. </li>
 <li>  Once loaded in the relational database, the data written in the relational table needs to be available through the API.</li>
 <ul>
 </p>
