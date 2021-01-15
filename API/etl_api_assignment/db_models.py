@@ -23,13 +23,13 @@ metadata = MetaData(Model.metadata)
 class location(Model):
     __tablename__ = 'location'
     sr_no = Column(Integer)
-    id = Column(Integer)
+    id = Column(Integer,primary_key=True)
     wgs84_polygon = Column(String)
 
     @staticmethod
-    def get_loc(id,wgs84_polygon):
+    def get_loc(id):
         """Queries location table """
-        loc_data = db_session.query(location.id, location.wgs84_polygon).filter_by(id=id)all()
+        loc_data = db_session.query(location.id, location.wgs84_polygon).filter_by(id=id).all()
         results = []
 
         if not loc_data:
@@ -37,6 +37,6 @@ class location(Model):
         else:
             res = []
             for id,wgs84_polygon in loc_data:
-                res.append({"loc_id": id, "wgs84_polygon": wgs84_polygon)
+                res.append({"loc_id": id, "wgs84_polygon": wgs84_polygon})
                 results = {"location_data": res}
         return results
