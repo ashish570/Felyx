@@ -1,5 +1,3 @@
-# Felyx
-
 <h1> Felyx Assessment</h1>
 <p align = "center">
 <h1>Problem Statement</h1>
